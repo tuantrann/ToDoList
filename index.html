@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ToDoList</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/6526c25084.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class=''>
+            <div class='header'>
+                <div class='header-text'>
+                    <h1>To Do List</h1>
+                </div>
+                
+            </div>
+        </header>
+        <main class=''>
+            <div class='content'>
+                <div class='project-name'>
+                    <div class='on-project'>
+                        <select class='drop-down'>
+                        </select>
+                            <button class='add-project'><span class='add-project-text'>+</span></button>
+                        </div>
+                    <div class='add-task'>
+                        <button class='add-task-button'>+ Add Task</button>
+                    </div>
+                </div>
+                <div class='middle-container show'>
+                    <div class='completion-status'>
+                        <div class='incomplete active'>Incomplete</div>
+                        <div class='complete'>Complete</div>
+                        <div class='all-tasks'>All Tasks</div>
+                    </div>
+                    <div>
+                        <table class='jobs-details'>
+                            <tr class='jobs-title'>
+                                <th class='detail'>Detail</th>
+                                <th class='title'>Title</th>
+                                <th class='date'>Date</th>
+                                <th class='priority'>Priority</th>
+                                <th class='status'>Status</th>
+                                <th class='delete'>Delete</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class='task-form'>
+                    <div class='task-title task-text'>Title</div>
+                    <input type="text" class='title-box' placeholder="Your Task" autocomplete='off' required>
+                    <div class='task-description task-text'>Description</div>
+                    <textarea name="" class="description-box" cols="30" rows="10" autocomplete='off'></textarea>
+                    <div class='task-date task-text'>Date</div>
+                    <input name='date' id='date' type="date" class='date-box' autocomplete='off' required>
+                    <div class='task-priority task-text'>Priority</div>
+                    <select name="" class="priority-box" autocomplete='off'>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <div class='task-project task-text'>Project</div>
+                    <select name="" class="project-box" autocomplete='off'>
+                        
+                    </select>
+                    <div class='task-note task-text'>Note</div>
+                    <textarea placeholder="Notes for task" name="" class="note-box" cols="30" rows="10" autocomplete='off'></textarea>
+                    <div class='ending-button'>
+                        <button class='cancel'>Cancel</button>
+                        <button class='submit'>Add Task</button>
+                    </div>
+                
+                </div>
+
+            </div>
+            
+        </main>
+        <div class='pop-up-class'>
+            <div class='pop-up'>
+                <div class='top'>
+                    <h2>Add Project</h2>
+                    <div class='exit'>
+                        <span >X</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" class='new-project-name' placeholder="Enter Project Name" autocomplete="off">
+                </div>
+                <div>
+                    <button class='pop-up-button'>Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

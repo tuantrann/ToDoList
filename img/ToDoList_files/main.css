@@ -1,0 +1,333 @@
+:root{
+    --primary: #38e0db;
+    --secondary: #2aa0f5;
+    --tertiary: #88dff7;
+    --fortiary: #94e2f7;
+    --contrast: #5e77f2;
+
+    --low: #9af5e3;
+    --medium: #f7f774;
+    --high: #ff6933;
+}
+button {
+    outline: none !important;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+main{
+    min-height: 100vh;
+}
+.header{
+    background-color: var(--primary);
+    color: var(--contrast);
+    height: 5rem;
+    position: relative;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-size: 200%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.project-name{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.drop-down{
+    border: none;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3px;
+    background-color: var(--tertiary);
+    font-size: 100%;
+    font-weight: bold;
+}
+.drop-down:hover{
+    background-color: var(--fortiary);
+}
+.drop-down-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 6rem;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+.drop-down-content .op{
+    background-color: #caf2fc;
+    color: black;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+
+}
+.drop-down-content .op:hover{
+    background-color: #fff;
+} 
+.add-project{
+ 
+    border: solid 1px var(--secondary);
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.add-project:hover{
+    animation-delay: 0.2s;
+    transform: scale(1.1);
+}
+.add-project-text{
+    font-size: 200%;
+    color: var(--secondary);
+}
+.add-task-button{
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 3px;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 120%;
+    font-weight: bolder;
+}
+.add-task-button:hover{
+    background-color: var(--tertiary);
+    transform: scale(1.05); 
+}
+
+.completion-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--contrast);
+    height: 3rem;
+    margin: 10px;
+}
+.incomplete, .complete, .all-tasks{
+    cursor: pointer;
+    
+}
+.incomplete:hover, .complete:hover, .all-tasks:hover{
+    color: var(--secondary);
+}
+
+table, tr {
+    width: 90%;
+    margin: 10px;
+
+}
+th, td{
+    padding: 10px 30px;
+    text-align: center;
+}
+.jobs-details{
+    margin: auto;
+    
+}
+.jobs-title{
+    background-color: #e8e8ed;
+    color: #686869;
+    font-weight: bold;
+    font-size: 110%;
+}
+.jobs-detail{
+    background-color: #f0f2f5;
+}
+
+.arrow{
+    font-size: 150%;
+    cursor: pointer;
+}
+.arrow:hover{
+    transform: scale(1.1);
+}
+
+.delete-button{
+    background-color: #f76257;
+    color: black;
+    font-size: 105%;
+    cursor: pointer;
+}
+.delete-button:hover{
+    background-color: #f7a29c;
+}
+.active{
+    color: yellow;
+}
+
+.task-form{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    box-shadow: 3px 2px 2px 0 rgba(0,0,0,0.3);
+    margin: 10px 0;
+    border-radius: 3px;
+    padding-top: 2px;
+    padding-left: 10px;
+    font-size: 110%;
+}
+input:focus, textarea:focus{
+    border: solid 2px lightblue;
+
+}
+.task-note{
+    margin-top: 20px;
+}
+select{
+    margin-top: 10px;
+    font-size: 110%;
+    box-shadow: 3px 2px 2px 0 rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+.title-box{
+    height: 30px;
+    
+}
+.description-box{
+    height: 100px;
+    text-align: start;
+    overflow-wrap: break-word;
+    overflow: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0;   
+}
+textarea{
+    font-size: 120%;
+    padding-top: 10px;
+}
+
+.cancel{
+    background-color: #e3e1e1;
+    color: #949191;
+    height: 40px;
+    font-size: 120%;
+    border-radius: 3px;
+}
+.cancel:hover{
+    color: black;
+}
+.submit{
+    background-color: var(--secondary);
+    color: white;
+    height: 40px;
+    font-weight: bold;
+    font-size: 120%;
+    border-radius: 3px;
+}
+.submit:hover{
+    background-color: var(--tertiary);
+}
+.task-text{
+    font-size: 130%;
+    font-weight: bolder;
+}
+.ending-button{
+    margin-top: 20px;
+}
+.task-form{
+    display: none;
+}
+.middle-container{
+    display: none;
+}
+.pop-up-class{
+    display: none;
+}
+.pop-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.exit{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+.exit:hover{
+    background-color: #e7e5e5;
+}
+.top h2{
+    font-size: 150%;
+    font-weight: bolder;
+    color: var(--secondary);
+}
+.new-project-name{
+    width: 150%;
+    transform: translateX(-18%);
+}
+.pop-up-button{
+    width: 150%;
+    height: 150%;
+    background-color: var(--contrast);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--tertiary);
+}
+.pop-up-button:hover{
+    background-color: var(--fortiary);
+}
+
+.show{
+    display: block;
+}
+.blur{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.blur:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    opacity: 0.4;
+}
