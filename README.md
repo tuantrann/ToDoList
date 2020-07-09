@@ -27,17 +27,10 @@ git clone git@github.com:tuantrann/ToDoList.git
 ```
 
 
-### And coding style tests
+### Tips
 
-Explain what these tests test and why
+You can click the header of the website to refresh everything
 
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
