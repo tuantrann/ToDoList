@@ -253,7 +253,7 @@ const initialPageLoad = (() => {
         const changeCurrentPro = (() =>{
             let dropDownContent = document.querySelectorAll('.drop-down-content');
             function changePro(e){
-                render(e.target.value, 'incomplete');
+                render(e.target.value, getCurrentProject());
             }
             if (dropDownContent.length > 0){
                 dropDownContent.forEach(elem => elem.addEventListener('click', changePro))
